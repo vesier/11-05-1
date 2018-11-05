@@ -1,0 +1,108 @@
+.shooter
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle at center, #444444, #000000);
+  font-family: Helvetica, Arial;
+}
+
+.shooter .start
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 80px;
+  text-transform: uppercase;
+  opacity: 0.15;
+  cursor: pointer;
+  display: none;
+}
+
+.shooter .score
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  text-transform: uppercase;
+  opacity: 0.15;
+  cursor: pointer;
+}
+
+.shooter .score .value
+{
+  font-size: 120px;
+}
+
+.shooter .score .unit
+{
+  font-size: 40px;
+}
+
+.shooter .timer
+{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  text-transform: uppercase;
+  opacity: 0.15;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.shooter .targets
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.shooter .targets .target
+{
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 12vmin;
+  height: 12vmin;
+  background:#ddd ;
+  margin-left: -6vmin;
+  margin-top: -6vmin;
+  border-radius: 100%;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.55);
+}
+
+.shooter .targets .target::before
+{
+  content:'';
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+  width:calc(100% /3*2);
+  height:calc(100% /3*2);
+  background: #cd0000;
+  border-radius: 100%;
+}
+
+.shooter .targets .target::after
+{
+  content:'';
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+  width:calc(100%/3);
+  height:calc(100%/3);
+  background: #ddd;
+  border-radius: 100%;
+}
